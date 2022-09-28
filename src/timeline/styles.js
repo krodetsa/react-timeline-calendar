@@ -22,11 +22,13 @@ export const StyledTimelineContainer = styled.div`
 `;
 export const StyledTableContainer = styled.div`
   display: flex;
-  height: auto;
+  height: 100%;
+  max-height: 610px;
   width: 100%;
   margin: 0 auto;
   border: 1px solid #404044;
   border-radius: 16px;
+  overflow: hidden;
 `;
 
 export const StyledBodyContainer = styled.div`
