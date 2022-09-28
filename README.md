@@ -1,6 +1,6 @@
 # React Timeline Calendar
 
-This projec still needs some polishing but it`s still usable.
+This project still needs some polishing but it`s still usable.
 
 ## Available Scripts
 
