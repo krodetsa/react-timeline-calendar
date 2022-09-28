@@ -6,7 +6,7 @@ This project needs some polishing but it`s still usable.
 
 ## Demo
 
-[Here is the demo link](https://react-timeline-calendar.vercel.app)
+[Demo link](https://react-timeline-calendar.vercel.app)
 
 
 ## Available Scripts
