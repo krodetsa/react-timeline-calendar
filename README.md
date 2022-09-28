@@ -9,6 +9,10 @@ This project needs some polishing but it`s still usable.
 
 You know the drill:
 
+### `npm install`
+
+Installs everything obviously.
+
 ### `npm start`
 
 Runs the app in the development mode.\
