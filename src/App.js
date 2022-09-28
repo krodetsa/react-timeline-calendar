@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useStore } from "effector-react";
+import { data, daysInView, rowHeight } from "./helpers";
+import TimelineComponent from "./timeline/index.js";
+import { $timelineState } from "./timeline/model";
+import { Fragment } from "react";
 
 function App() {
+  const { dateFrom, dateTo, cellWidth } = useStore($timelineState);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <TimelineComponent
+        dateFrom={dateFrom}
+        dateTo={dateTo}
+        cellWidth={cellWidth}
+        daysInView={daysInView}
+        rowHeight={rowHeight}
+        data={data}
+      />
+    </Fragment>
   );
 }
 
