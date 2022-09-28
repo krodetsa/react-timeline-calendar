@@ -6,7 +6,8 @@ This project needs some polishing but it`s still usable.
 
 ## Demo
 
-react-timeline-calendar.vercel.app
+[react-timeline-calendar.vercel.app](Here is the demo link)
+
 
 ## Available Scripts
 
