@@ -19,9 +19,3 @@ $scrollPosition.watch((top) => {
     document.getElementById("names-scrollable").scrollTo({ top });
   }
 });
-
-$horizontalScrollPosition.watch((left) => {
-  if (left !== null) {
-    document.getElementById("sections-scrollable").scrollTo({ left });
-  }
-});

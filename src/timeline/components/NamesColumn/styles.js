@@ -39,15 +39,14 @@ export const StyledHeaderContainer = styled.div`
   margin-top: 1px;
   align-items: flex-end;
   height: 52px;
-  padding-left: 16px;
-  padding-right: 30px;
   & p {
     margin: 0px;
     font-weight: 500;
     font-size: 10px;
     line-height: 16px;
-    color: #fff;
-    margin-bottom: -6px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: -7px;
+    padding-left: 16px;
   }
 `;
 export const StyledLine = styled.div`
@@ -66,6 +65,7 @@ export const StyledBodyContainer = styled.div`
   -ms-overflow-style: none;
   scrollbar-width: none;
   padding-top: 12px;
+  box-shadow: 2px 12px 13px 0px rgb(0 0 0 / 34%);
   &::-webkit-scrollbar {
     width: 0;
     height: 0;

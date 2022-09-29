@@ -48,11 +48,14 @@ export const StyledWorkerItem = styled.div`
       &&::before {
         opacity: 1;
       }
+      && > div p {
+        color: #ffffff;
+      }
     `}
   & > div p {
     font-weight: 400;
     font-size: 12px;
-    color: #f5f5f5;
+    color: #56565f;
     padding: 0px;
     width: auto;
     min-width: 0px;
@@ -65,7 +68,7 @@ export const StyledWorkerItem = styled.div`
   & span {
     font-size: 12px;
     line-height: 20px;
-    color: #f5f5f5;
+    color: #56565f;
     text-transform: capitalize;
     margin: 0px;
   }
@@ -83,7 +86,7 @@ export const StyledWorkerItem = styled.div`
     position: relative;
     width: 16px;
     height: 16px;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #56565f;
     margin-right: 12px;
     border-radius: 50%;
     top: -0.5px;

@@ -11,14 +11,14 @@ export const StyledWrapper = styled.div`
 export const StyledHeaderP = styled.p.attrs((props) => ({
   style: {
     color: `${
-      props.$active ? "#ffffff" : props.$is_weekend ? "#CD9DFF" : "#babace"
+      props.$active ? "#ff7500" : props.$is_weekend ? "purple" : "#000000"
     }`,
   },
 }))``;
 export const StyledHeaderSpan = styled.span.attrs((props) => ({
   style: {
     color: `${
-      props.$active ? "#ffffff" : props.$is_weekend ? "#CD9DFF" : "#56565f"
+      props.$active ? "#ff7500" : props.$is_weekend ? "purple" : "#56565f"
     }`,
   },
 }))``;
@@ -60,11 +60,11 @@ export const StyledHeaderCell = styled.div.attrs((props) => ({
         width: ${(props) => `${props.$width}px`};
         background-image: linear-gradient(
           to bottom,
-          #838398 1px,
+          #babace 2px,
           rgba(255, 255, 255, 0) 0%
         );
         background-position: left;
-        background-size: 1px 20px;
+        background-size: 2px 20px;
         background-repeat: repeat-y;
         right: -1px;
         top: 105%;
@@ -85,13 +85,13 @@ export const StyledHeaderCell = styled.div.attrs((props) => ({
         width: ${(props) => `${props.$width * 2}px`};
         background: repeating-linear-gradient(
           -45deg,
-          #2d2d34 1px,
-          #2d2d34 2px,
+          #babace 1px,
+          #babace 1px,
           transparent 2px,
           transparent 14px
         );
-        border-right: 1px solid #2d2d34;
-        border-left: 1px solid #2d2d34;
+        border-right: 1px solid #babace;
+        border-left: 1px solid #babace;
         right: -1px;
         top: 105%;
         position: absolute;
@@ -111,7 +111,7 @@ export const StyledToday = styled.div`
   height: 7px;
   top: 100%;
   border-radius: 50%;
-  background: #babace;
+  background: #000000;
   &&::before {
     transition: 0.3s;
     content: "";
@@ -119,7 +119,7 @@ export const StyledToday = styled.div`
     height: ${(props) => `${props.$body_height - 10}px`};
     background: transparent;
     width: 1px;
-    background: #616174;
+    background: #000000;
     right: calc(100% - 4px);
     top: 105%;
     position: absolute;

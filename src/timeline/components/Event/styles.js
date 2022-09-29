@@ -14,8 +14,8 @@ export const StyledWrapper = styled.span.attrs((props) => {
     },
   };
 })`
-  background: #2c2c32;
-  border: 1px solid #353539;
+  background: #4a4a52;
+  border: 1px solid #4a4a52;
   border-radius: 8px;
   display: flex;
   align-items: center;

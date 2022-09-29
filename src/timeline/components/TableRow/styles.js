@@ -12,7 +12,7 @@ export const StyledRow = styled.div.attrs((props) => ({
 `;
 export const StyledBg = styled.div.attrs((props) => ({
   style: {
-    background: `${props.$active ? "rgba(32, 32, 32, 0.7)" : "transparent"}`,
+    background: `${props.$active ? "rgba(32, 32, 32, 0.5)" : "transparent"}`,
   },
 }))`
   width: 100%;
