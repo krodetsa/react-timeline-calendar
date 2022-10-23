@@ -80,17 +80,19 @@ const Event = ({
           });
           const newTo = newWidth / cellWidth + newLeft / cellWidth;
           const newFrom = newLeft / cellWidth;
-          changeActiveCellFx(datesArray[newFrom]);
-          setInitData(
-            findObjectInArray({
-              initData,
-              data,
-              datesArray,
-              newTo,
-              newFrom,
-              eventsData,
-            })
-          );
+          if (newFrom >= 0 && newFrom <= datesArray.length - 1) {
+            changeActiveCellFx(datesArray[newFrom]);
+            setInitData(
+              findObjectInArray({
+                initData,
+                data,
+                datesArray,
+                newTo,
+                newFrom,
+                eventsData,
+              })
+            );
+          }
           // console.log({
           //   to: datesArray[newTo < newFrom ? newFrom : newTo],
           //   from: datesArray[newFrom],
@@ -171,7 +173,7 @@ const Event = ({
         <DraggableCore
           axis="x"
           grid={[cellWidth, cellWidth]}
-          onDrag={(_, prevData) => {
+          onDrag={(e, prevData) => {
             setLineSettings({
               ...lineSettings,
               width: lineSettings.width + prevData.deltaX,
@@ -200,6 +202,7 @@ const Event = ({
           onStop={endDragging}
         >
           <StyledDragHandle
+            onClick={(e) => e.stopPropagation()}
             $is_dragged={eventLineIsDragged}
             className="drag-handle handle"
             $is_left={true}

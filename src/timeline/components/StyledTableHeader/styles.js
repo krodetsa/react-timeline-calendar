@@ -60,7 +60,7 @@ export const StyledHeaderCell = styled.div.attrs((props) => ({
         width: ${(props) => `${props.$width}px`};
         background-image: linear-gradient(
           to bottom,
-          #babace 2px,
+          #56565f 2px,
           rgba(255, 255, 255, 0) 0%
         );
         background-position: left;
@@ -85,13 +85,13 @@ export const StyledHeaderCell = styled.div.attrs((props) => ({
         width: ${(props) => `${props.$width * 2}px`};
         background: repeating-linear-gradient(
           -45deg,
-          #babace 1px,
-          #babace 1px,
+          #56565f 1px,
+          #56565f 1px,
           transparent 2px,
           transparent 14px
         );
-        border-right: 1px solid #babace;
-        border-left: 1px solid #babace;
+        border-right: 1px solid #56565f;
+        border-left: 1px solid #56565f;
         right: -1px;
         top: 105%;
         position: absolute;
@@ -107,11 +107,11 @@ export const StyledEmptyCell = styled.div.attrs((props) => ({
 
 export const StyledToday = styled.div`
   position: absolute;
-  width: 7px;
-  height: 7px;
-  top: 100%;
+  width: 15px;
+  height: 15px;
+  top: 90%;
   border-radius: 50%;
-  background: #000000;
+  background: #ff7500;
   &&::before {
     transition: 0.3s;
     content: "";
@@ -119,8 +119,8 @@ export const StyledToday = styled.div`
     height: ${(props) => `${props.$body_height - 10}px`};
     background: transparent;
     width: 1px;
-    background: #000000;
-    right: calc(100% - 4px);
+    background: #ff7500;
+    right: calc(100% - 8px);
     top: 105%;
     position: absolute;
     z-index: 10;

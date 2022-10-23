@@ -1,6 +1,6 @@
 #root {
   width: 100%;
-  height: 95vh;
+  height: 100%;
   max-width: 1800px;
   margin: 0 auto;
   display: flex;
@@ -12,4 +12,10 @@
 }
 * {
   font-family: "Montserrat", sans-serif !important;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #D3BDEE;
+  margin: 0px;
 }
