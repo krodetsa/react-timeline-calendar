@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/44131241/192983998-dd90b70b-9977-43c8-8eb9-46fa50acfc9a.png)
+![image](https://user-images.githubusercontent.com/44131241/197387175-7f66b430-2907-4110-9511-107847f0c943.png)
+
 
 # React Timeline Calendar
 
